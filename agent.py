@@ -12,3 +12,4 @@ def build_agent() :
     )
 agent = build_agent()
 
+agent.print_response("my budget is 1L INR , shouldi travelto goa or phuket")
