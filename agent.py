@@ -1,5 +1,8 @@
 from agno.agent import Agent
 from agno.models.groq import Groq
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def build_agent() :
     return Agent (
