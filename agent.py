@@ -2,7 +2,7 @@ from agno.agent import Agent
 from agno.models.groq import Groq
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("../.env")
 
 def build_agent() :
     return Agent (
@@ -12,4 +12,4 @@ def build_agent() :
     )
 agent = build_agent()
 
-agent.print_response("my budget is 1L INR , shouldi travelto goa or phuket")
+agent.print_response("my budget is 1L INR , shouldi travel to goa or phuket")
