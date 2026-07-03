@@ -6,7 +6,7 @@ load_dotenv()
 
 def build_agent() :
     return Agent (
-        model = Groq(id = ""),
+        model = Groq(id = "llama-3.3-70b-versatile"),
         markdown = True, # gives output in proper format
         instructions ="you are helpful and expert travel agent.",
     )
