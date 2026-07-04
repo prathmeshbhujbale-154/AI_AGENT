@@ -20,7 +20,9 @@ video = st.text_input("enter youtube video link")
 button = st.button("analyze")
 
 if video and button :
-    with st.spinner("Analysing video....")
+    with st.spinner("Analysing video...."):
         response = agent.run(
             f"Analyze this video: {video}"
         )
+    st.markdown("Analysis report of url")
+    st.markdown(response.content)
