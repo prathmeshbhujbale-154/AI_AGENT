@@ -7,3 +7,10 @@ st.set_page_config(
 )
 
 st.title("🎥AI Youtube Video Analyzer")
+
+#cache =. fast access, temp storage => most frequently items
+@st.cache_resource 
+def get_agent():
+    return build_agent()
+
+agent = get_agent()
