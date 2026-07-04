@@ -14,7 +14,11 @@ team_leader = Team(
     members = [eng_agent, frc_agent, hin_agent],
     model = Groq(id = "qwen/qwen3-32b"),
     markdown=True,
-    show_members_responses=True
+    show_members_responses=True,
+    instructions="""all agents must response to answer the query in their specific language.
+                    do not route just one agent.
+                    output the response of all agents.
+                """
 )
 
 team_leader.print_response("who is prime minister  of india")
