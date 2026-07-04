@@ -1,3 +1,7 @@
 import streamlit as st
-st.write("hello")
 from youtube_analyzer import build_agent
+
+st.set_page_config(
+    page_title = "youtube analyzer",
+    layout="centered"
+)
