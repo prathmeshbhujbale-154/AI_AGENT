@@ -18,3 +18,9 @@ agent = get_agent()
 #input box
 video = st.text_input("enter youtube video link")
 button = st.button("analyze")
+
+if video and button :
+    with st.spinner("Analysing video....")
+        response = agent.run(
+            f"Analyze this video: {video}"
+        )
