@@ -5,3 +5,5 @@ st.set_page_config(
     page_title = "youtube analyzer",
     layout="centered"
 )
+
+st.title("🎥AI Youtube Video Analyzer")
