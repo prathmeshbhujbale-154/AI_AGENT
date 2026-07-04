@@ -11,7 +11,6 @@ def build_agent() :
         model = Groq(id = "qwen/qwen3-32b"),
         tools=[DuckDuckGoTools(), YFinanceTools()],
         markdown = True, # gives output in proper format
-        instructions ="you are helpful and expert travel agent.",
         add_datetime_to_context=True,
         description="You are a comprehensive investment analyst with access to all financial data functions.",
         instructions=[
@@ -23,4 +22,4 @@ def build_agent() :
     )
 agent = build_agent()
 
-agent.print_response("my budget is 1L INR , should i travel to goa or phuket")
+agent.print_response("share the NVIDIA stock price and analysis recommendation")
