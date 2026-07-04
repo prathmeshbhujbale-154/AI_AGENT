@@ -14,3 +14,7 @@ def get_agent():
     return build_agent()
 
 agent = get_agent()
+
+#input box
+video = st.text_input("enter youtube video link")
+button = st.button("analyze")
